@@ -2,4 +2,4 @@
 
 # [transferme.it](https://transferme.it/)
 
-## [Mac App](https://github.com/maxisme/transfermeit) | [Website](https://github.com/maxisme/transferme.it) | [Backend](https://github.com/maxisme/transfermeit-backend)
+## [Mac App](https://github.com/maxisme/transfermeit) | Website | [Backend](https://github.com/maxisme/transfermeit-backend)
