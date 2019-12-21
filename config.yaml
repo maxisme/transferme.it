@@ -8,7 +8,7 @@ meta:
   description: A minimal file transfer app for MacOS.
 app:
   version:
-    num: 0.04
+    num: 0.03
     description: >
       <h2>New Features</h2>
 
