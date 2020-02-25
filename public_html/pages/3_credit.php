@@ -88,25 +88,25 @@
         }
 
 		Materialize.showStaggeredList('#staggered-test')
-
-        if (lastCredit !== credit && !fetchingButton) {
-            $.ajax({
-                url: 'backend/getButton.php',
-                type: 'GET',
-                data: "credit="+credit,
-                beforeSend: function () {
-                    $("#purchase_button button").prop('disabled', true); // prevent the user from pressing purchase while fetching the dynamic button.
-                    fetchingButton = true;
-                },
-                success: function (data) {
-                    //var html_button = data.replace('type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_subscribe_LG.gif"', "class='lineText buyNow' type='submit' value='BUY NOW!'");
-                    $("#purchase_button button").prop('disabled', false); // now allow the user to click the purchase button
-                    $("#purchase_button").html(data);
-                    lastCredit = credit;
-                    fetchingButton = false;
-                }
-            });
-        }
+        //
+        // if (lastCredit !== credit && !fetchingButton) {
+        //     $.ajax({
+        //         url: 'backend/getButton.php',
+        //         type: 'GET',
+        //         data: "credit="+credit,
+        //         beforeSend: function () {
+        //             $("#purchase_button button").prop('disabled', true); // prevent the user from pressing purchase while fetching the dynamic button.
+        //             fetchingButton = true;
+        //         },
+        //         success: function (data) {
+        //             //var html_button = data.replace('type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_subscribe_LG.gif"', "class='lineText buyNow' type='submit' value='BUY NOW!'");
+        //             $("#purchase_button button").prop('disabled', false); // now allow the user to click the purchase button
+        //             $("#purchase_button").html(data);
+        //             lastCredit = credit;
+        //             fetchingButton = false;
+        //         }
+        //     });
+        // }
     }
 
 	$("#purchase_button").click(function(){
