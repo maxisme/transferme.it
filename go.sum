@@ -9,10 +9,6 @@ github.com/kr/pretty v0.2.0/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfn
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/maxisme/appserver v1.0.0 h1:VrRuZkRmXBJY/sQJNngVdPxw+d9ulbYu/UOsky1Svv4=
-github.com/maxisme/appserver v1.0.0/go.mod h1:oWMKChhjTbxH+1DijEod4ZRrDsI2oOT5bpH+2/lUqhA=
-github.com/maxisme/appserver v1.0.1 h1:cV6LW2WA7cocECHxBc9WWvfKwIsiA1utdN6YVvCRBE8=
-github.com/maxisme/appserver v1.0.1/go.mod h1:wETxYJdPzBS/1V6KgC5bgyxHqgefGvTVbnjCswqiQAA=
 github.com/maxisme/appserver v1.0.2 h1:WlHxgElbttmIqEMUVZAlh1o/iPu2dZ4W8KRDkCUBMA8=
 github.com/maxisme/appserver v1.0.2/go.mod h1:oWMKChhjTbxH+1DijEod4ZRrDsI2oOT5bpH+2/lUqhA=
 github.com/tylerb/graceful v1.2.15 h1:B0x01Y8fsJpogzZTkDg6BDi6eMf03s01lEKGdrv83oA=
