@@ -7,6 +7,7 @@ PROJECT="transfermeit"
 cd $(dirname "$0")
 
 # pull latest from project you have created
+git reset --hard HEAD
 git fetch origin
 git checkout master
 if git merge $1; then
