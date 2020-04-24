@@ -11,15 +11,3 @@ cd /root/
 git clone https://github.com/maxisme/transferme.it
 go build -o /usr/local/bin/transfermeit .
 ```
-Create socket service
-```
-$ cp transfermeit.service /etc/systemd/system/
-$ cp transfermeit.socket /etc/systemd/system/
-```
-```
-$ systemctl daemon-reload
-$ systemctl enable transfermeit.socket
-$ systemctl start transfermeit.socket
-$ systemctl status transfermeit.socket
-$ curl http://127.0.0.1:8082
-```

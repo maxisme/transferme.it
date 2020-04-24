@@ -7,10 +7,8 @@ import (
 )
 
 func main() {
-	// load .env
-	if err := godotenv.Load(); err != nil {
-		panic(err)
-	}
+	// load .env if there
+	_ = godotenv.Load()
 
 	conf := appserver.ProjectConfig{
 		Name:        "Transfer Me It",
@@ -33,6 +31,7 @@ func main() {
 			Username: os.Getenv("emailusername"),
 			Password: os.Getenv("emailpassword"),
 		},
+		WebPort: 8080,
 	}
 
 	if err := appserver.Serve(conf); err != nil {
