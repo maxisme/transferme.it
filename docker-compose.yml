@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  app:
+    image: maxisme/transferme.it:latest
+    restart: always
+    env_file:
+      - ".env"
+    labels:
+      - traefik.http.routers.my-container.rule=Host(`transferme.it`)
+      - traefik.http.services.my-container-service.loadbalancer.server.port=8080
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
