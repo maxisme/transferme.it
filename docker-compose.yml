@@ -5,8 +5,8 @@ services:
     env_file:
       - ".env"
     labels:
-      - traefik.http.routers.my-container.rule=Host(`transferme.it`)
-      - traefik.http.services.my-container-service.loadbalancer.server.port=8080
+      - traefik.http.routers.transfermeit.rule=Host(`transferme.it`)
+      - traefik.http.services.transfermeit.loadbalancer.server.port=8080
     networks:
       - traefik
 
