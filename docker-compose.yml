@@ -7,9 +7,10 @@ services:
     labels:
       - traefik.http.routers.transfermeit.rule=Host(`transferme.it`)
       - traefik.http.services.transfermeit.loadbalancer.server.port=8080
+      - traefik.enable=true
     networks:
       - traefik
 
 networks:
   traefik:
-    driver: overlay
+    external: true
