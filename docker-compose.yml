@@ -5,9 +5,11 @@ services:
     env_file:
       - ".env"
     labels:
-      - traefik.http.routers.transfermeit.rule=Host(`transferme.it`)
-      - traefik.http.services.transfermeit.loadbalancer.server.port=8080
-      - traefik.enable=true
+      - "traefik.enable=true"
+      - "traefik.http.routers.transfermeit.rule=Host(`transferme.it`)"
+      - "traefik.http.routers.transfermeit.entrypoints=websecure"
+      - "traefik.http.routers.transfermeit.tls.certresolver=letsencrypt"
+      - "traefik.http.services.transfermeit.loadbalancer.server.port=8080"
     networks:
       - traefik
 
