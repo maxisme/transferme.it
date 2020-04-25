@@ -10,6 +10,7 @@ services:
       - "traefik.http.routers.transfermeit.entrypoints=websecure"
       - "traefik.http.routers.transfermeit.tls.certresolver=letsencrypt"
       - "traefik.http.services.transfermeit.loadbalancer.server.port=8080"
+      - "traefik.routers.transfermeit.service=transfermeit"
     networks:
       - traefik
 
