@@ -11,3 +11,4 @@ cd /root/
 git clone https://github.com/maxisme/transferme.it
 go build -o /usr/local/bin/transfermeit .
 ```
+

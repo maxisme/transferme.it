@@ -2,7 +2,6 @@ version: '3.2'
 services:
   app:
     image: maxisme/transferme.it:latest
-    restart: always
     env_file:
       - ".env"
     labels:
@@ -13,4 +12,4 @@ services:
 
 networks:
   traefik:
-    external: true
+    driver: overlay
