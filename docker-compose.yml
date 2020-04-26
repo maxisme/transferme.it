@@ -7,14 +7,7 @@ services:
     deploy:
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.transfermeit.service=transfermeit"
         - "traefik.http.routers.transfermeit.rule=Host(`transferme.it`)"
         - "traefik.http.routers.transfermeit.entrypoints=web-secure"
         - "traefik.http.routers.transfermeit.tls.certresolver=letsencrypt"
         - "traefik.http.services.transfermeit.loadbalancer.server.port=8080"
-    networks:
-      - traefik
-
-networks:
-  traefik:
-    external: true

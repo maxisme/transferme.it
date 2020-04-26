@@ -12,3 +12,7 @@ git clone https://github.com/maxisme/transferme.it
 go build -o /usr/local/bin/transfermeit .
 ```
 
+```
+docker stack deploy transfermeit -c docker-compose.yml 
+```
+
