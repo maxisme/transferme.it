@@ -12,7 +12,9 @@ git clone https://github.com/maxisme/transferme.it
 go build -o /usr/local/bin/transfermeit .
 ```
 
+____
+Write custom .env first then run:
 ```
-docker stack deploy transfermeit -c docker-compose.yml 
+docker stack deploy transfermeit -c transfermeit.yml 
 ```
 
