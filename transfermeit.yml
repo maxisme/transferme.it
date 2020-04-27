@@ -12,8 +12,6 @@ services:
         - "traefik.http.routers.transfermeit.entrypoints=web-secure"
         - "traefik.http.routers.transfermeit.tls.certresolver=letsencrypt"
         - "traefik.http.services.transfermeit.loadbalancer.server.port=8080"
-    volumes:
-      - "./Transfer Me It.dmg:/app/Transfer Me It.dmg"
     networks:
       - traefik
 
