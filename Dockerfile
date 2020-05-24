@@ -3,6 +3,7 @@ COPY . /app/
 WORKDIR /app
 RUN go build -o app
 
+# -----
 
 FROM alpine
 COPY . /app/
