@@ -5,6 +5,7 @@ services:
     env_file:
       - ".env"
     deploy:
+      mode: global
       labels:
         - "traefik.enable=true"
         - "traefik.http.routers.transfermeit.rule=Host(`transferme.it`)"
