@@ -20,10 +20,9 @@ jobs:
       - name: Update Swarm
         if: github.ref == 'refs/heads/master'
         run: |
-          sha="${{ github.GITHUB_SHA }}"
           curl -X POST ${{ secrets.SWARM_HOOK }} \
           -H 'Content-Type: application/x-www-form-urlencoded' \
           -d 'service=transfermeit_app' \
           -d "repo=${{ github.repository }}" \
-          -d "tag=sha-${sha:0:7}" \
+          -d "sha=${{ github.GITHUB_SHA }}" \
           -d "token=${{ secrets.HOOK_TOKEN }}"
