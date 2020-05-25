@@ -26,4 +26,4 @@ jobs:
           -d 'service=transfermeit_app' \
           -d "repo=${{ github.repository }}" \
           -d "tag=sha-${sha:0:7}" \
-          -d "token=sha-${{ secrets.HOOK_TOKEN }}"
+          -d "token=${{ secrets.HOOK_TOKEN }}"
