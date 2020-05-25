@@ -14,7 +14,7 @@ func main() {
 		Name:        "Transfer Me It",
 		Host:        "transferme.it",
 		DmgPath:     "Transfer Me It.dmg",
-		KeyWords:    "transfer me it, transfermeit, file, send, transfer, me, it, transfer, file transfer, send files, mac, osx, mac to mac",
+		KeyWords:    "transfer me it, transfermeit, transfer me, video, png, jpg, mp4, file, send, transfer, me, it, transfer, file transfer, send files, mac, osx, mac to mac",
 		Description: "A minimal file transfer app for MacOS.",
 		Recaptcha: appserver.Recaptcha{
 			Pub:  os.Getenv("captchpub"),
