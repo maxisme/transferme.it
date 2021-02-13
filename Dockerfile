@@ -1,17 +1,16 @@
 # build binary
 FROM golang:alpine AS builder
-ADD . /
 WORKDIR /
+ADD src/ .
 RUN go build -o app
 
 # copy binary to alpine
 FROM alpine
-ADD . /app/
+ADD src/ /app/
 WORKDIR /app
+
 # copy dependent files
 COPY --from=builder /go/pkg/mod/github.com/maxisme/ /go/pkg/mod/github.com/maxisme/
 COPY --from=builder /app /app/app
 
-RUN apk add curl
-HEALTHCHECK CMD curl --fail http://localhost:8080/ || exit 1
 CMD ["./app"]
