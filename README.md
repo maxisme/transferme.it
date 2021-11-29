@@ -5,16 +5,12 @@
 ## [Mac App](https://github.com/maxisme/transfermeit) | Website | [Backend](https://github.com/maxisme/transfermeit-backend)
 ![Push](https://github.com/maxisme/transferme.it/workflows/Push/badge.svg)
 
-Create binary:
-```
-cd /root/
-git clone https://github.com/maxisme/transferme.it
-go build -o /usr/local/bin/transfermeit .
+Run website:
+```bash
+hugo serve
 ```
 
-____
-Write custom .env first then run:
+Upgrade theme:
+```bash
+git submodule update --recursive --force --remote
 ```
-docker stack deploy transfermeit -c transfermeit.yml 
-```
-

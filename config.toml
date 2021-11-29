@@ -1,0 +1,4 @@
+baseURL = "https://transferme.it/"
+languageCode = "en-gb"
+title = "Transfer Me It"
+theme = "app-hugo"

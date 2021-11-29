@@ -1,8 +1,0 @@
-ingress:
-  match: "Host(`transferme.it`)"
-
-image:
-  repository: "maxisme/transferme.it"
-  tag: "latest"
-
-envSecretRef: "transfermeit" # kubectl create secret generic transfermeit --from-env-file .env
